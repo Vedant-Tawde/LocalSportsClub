@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -92,18 +93,7 @@ html {
     font-weight: 10;
     padding-top: 50px;
 }
-/* .content>video{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: -1;
-} */
+
  .video-bg {
   position: fixed;
   top: 0;
@@ -220,7 +210,6 @@ html {
 .contact-box {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
     border-radius: 25px;
     width: 600px;
     margin: 50px auto;
@@ -270,7 +259,6 @@ html {
 }
 
 .contact-box select {
-    appearance: none;
     cursor: pointer;
 }
 
@@ -323,3 +311,97 @@ html {
   text-decoration: underline;
 }
 
+
+/* services ke photos */
+.services-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+}
+
+.service-item {
+  text-align: center;
+}
+
+.service-img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-img:hover {
+  
+  box-shadow: 0 0 20px aqua;
+}
+
+.service-item p {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  color: white;
+  margin-top: 15px;
+  text-shadow: 0 0 8px aqua;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/*  pricing wala part */
+#pricing {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: nowrap;
+}
+
+.pricing-card {
+  width: 320px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.pricing-card h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.pricing-card.red h3 { background-color: #c62828; }
+.pricing-card.blue h3 { background-color: #1565c0; }
+.pricing-card.navy h3 { background-color: #0d47a1; }
+
+.pricing-card p {
+  font-family: "DM Serif Text", serif;
+  margin: 8px 0;
+  color: #333;
+  font-size: 17px;
+}
+
+.match-vs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.match-vs .team-logo {
+  width: 80px;
+  height: auto;
+}
